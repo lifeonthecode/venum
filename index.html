@@ -16,6 +16,23 @@
 </head>
 <body>
 
+    
+    <!-- search bar  -->
+    <div class="search_bar_section">
+        <div class="search_bar">
+            <div class="search_header">
+                <h3>What are you looking for ?</h3>
+                <button class="close_btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <form action="" class="search_form">
+                <input type="text" placeholder="Search by keywords, products, collections">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
     <header class="header_section d-flex align-items-center justify-content-between position-relative">
         <div class="logo">
             <a href="#"><img src="assets/logo/LOGO-VENUM-FULL_190x.avif" alt=""></a>
@@ -173,7 +190,7 @@
                                         <h3>New</h3>
                                         <h3 >Outlet</h3>
                                     </div>
-                                    
+
                                     <div class="item">
                                         <div>
                                             <div class="item_inner_lists">
@@ -582,7 +599,7 @@
 
         <div class="header_right d-flex align-items-center gap-4">
             <div class="search_icon">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="search_show_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <div class="user_icon">
                 <a href="#"><i class="fa-regular fa-user"></i></a>
@@ -599,4 +616,5 @@
 </body>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
 </html>
