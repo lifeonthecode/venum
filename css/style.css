@@ -1,0 +1,223 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin-top: 0px;
+    padding: 0px;
+}
+
+a {
+    
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    pointer-events: none;
+}
+button {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'AlternateGotNo1D';
+}
+
+
+
+/* header section  */
+.header_section {
+    padding: 0px 50px;
+    height: 71px;
+    background-color: white;
+}
+
+.main_menu {
+    column-gap: 33px;
+}
+
+.main_menu li {
+    position: relative;
+}
+
+.main_menu > li > a {
+    font-size: 28px;
+    font-weight: 400;
+    color: rgb(20, 20, 20);
+    line-height: 38px;
+    text-transform: capitalize;
+    position: relative;
+
+}
+
+.main_menu > li:last-child > a {
+    color: #f54337;
+}
+
+.main_menu > li:last-child > a::before {
+    background-color: #f54337;
+}
+
+.main_menu > li > a::before {
+    position: absolute;
+    content: " ";
+    bottom: 0px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: width .3s ease;
+}
+
+.main_menu li a:hover::before {
+    width: 100%;
+}
+
+
+.header_right div a, button {
+    font-size: 20px;
+    color: black;
+}
+
+.cart_icon a img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+/* mega menu  */
+.mega_menu {
+	position: absolute;
+	top: 70px;
+	left: 0;
+	width: 100%;
+	padding: 45px 84px;
+	border-top: 1px solid #ddd;
+	display: flex;
+    justify-content: center;
+	gap: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: center top;
+    transition: all .5s ease;
+    box-shadow: 0px 20px 40px -20px #111;
+}
+
+
+
+.main_menu li:hover .mega_menu  {
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.mega_menu_inner {
+	width: 1400px;
+	display: flex;
+}
+
+.mega_item_inner {
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+}
+
+
+.mega_menu_collection {
+	max-width: 1250px;
+	width: 100%;
+	margin-inline: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.item_collection {
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	justify-content: space-between;
+	gap: 45px;
+}
+
+.mega_menu_sports {
+	max-width: 1250px;
+	width: 100%;
+	margin-inline: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.item_sports {
+	display: grid;
+    grid-template-columns: repeat(5, 1fr);
+	justify-content: space-between;
+	gap: 45px;
+}
+
+
+
+
+.mega_menu .item > h3 {
+    font-size: 28px;
+    color: #141414;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.mega_menu .item > h3:last-child {
+    color: #f54337;
+}
+
+.mega_menu .item div img {
+    max-width: 345px;
+    width: 100%;
+    min-height: 414px;
+    object-fit: cover;
+}
+.mega_menu .item.three div img {
+    max-width: 345px;
+    width: 100%;
+    min-height: 414px;
+    object-fit: cover;
+}
+
+.collection_item div img {
+    max-width: 345px !important;
+    width: 100%;
+    min-height: 414px !important;
+    object-fit: contain;
+}
+
+
+
+
+
+
+.item .item_inner_lists h3 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #141414;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.item_inner_lists .lists_item li a {
+    font-size: 24px;
+    font-weight: 400;
+    color: #868686;
+    text-transform: capitalize;
+    line-height: 30px;
+    transition: all .3s ease;
+
+}
+
+.item_inner_lists .lists_item li a:hover {
+    color: rgb(20, 20, 20);
+}
+

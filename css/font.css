@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'AlternateGotNo1D';
+    src: url('../webfonts/AlternateGotNo1D.woff2') format('woff2'),
+        url('../webfonts/AlternateGotNo1D.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AlternateGotNo2D';
+    src: url('../webfonts/AlternateGotNo2D.woff2') format('woff2'),
+        url('../webfonts/AlternateGotNo2D.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AlternateGotNo3D';
+    src: url('../webfonts/AlternateGotNo3D.woff2') format('woff2'),
+        url('../webfonts/AlternateGotNo3D.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
